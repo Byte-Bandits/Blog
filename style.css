@@ -1,130 +1,159 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color: black;
+    margin: 0;
+    padding: 0;
+   background-color: black;
   height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 #background {
-  width: 100%;
+    width: 100%;
   position: fixed;
   right: 0;
-  height: 100vh;
-  margin: 0;
-  z-index: -1;
+    height: 100vh;
+    margin: 0;
+    z-index: -1;
 }
 header {
-  backdrop-filter: blur(2px);
-  background: rgba(156, 156, 156, 0.421);
-  margin-top: 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 55%;
-  height: 12%;
-  border-radius: 40px;
+   backdrop-filter: blur(2px);
+    background: rgba(156, 156, 156, 0.421);
+   margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 55%;
+    height: 12%;
+    border-radius: 40px
 }
 
 p {
-  color: white;
+    color: white;
 }
 header img {
-  border-radius: 50%;
-  height: 80px;
-  width: 80px;
-  box-shadow: 0px 0px 10px 2px white;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+   box-shadow: 0px 0px 10px 2px white;
+   
+}
+header img:hover {
+    animation-name: shadowchange1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+@keyframes shadowchange1 {
+    50% {box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.514);}
 }
 header div:first-of-type p:first-of-type {
-  font-size: 25px;
+    font-size: 25px;
 }
 header div:first-of-type p:last-of-type {
-  font-size: 20px;
+    font-size: 20px;
 }
-header a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
 }
 header div:last-of-type {
-  display: flex;
-  flex-direction: row;
-  width: 250px;
+   display: flex;
+   flex-direction: row;
+   width: 250px;
 }
 
+
 main {
-  backdrop-filter: blur(2px);
-  background: rgba(156, 156, 156, 0.421);
-  width: 55%;
-  padding-left: 30px;
-  padding-right: 30px;
-  height: max-content;
-  margin-top: 5%;
-  border-radius: 40px;
-  display: flex;
-  flex-direction: row;
+    backdrop-filter: blur(2px);
+    background: rgba(156, 156, 156, 0.421);
+    width: 55%;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: max-content;
+   margin-top: 5%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
 }
 .mainMoon {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
   box-shadow: 0px 0px 20px 5px white;
   position: fixed;
   top: 20%;
 }
+.mainMoon:hover {
+    animation-name: shadowchange2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+@keyframes shadowchange2 {
+    50% {box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.514);}
+}
 .img-title {
-  width: 299.75px;
-  height: 168.25px;
-  margin-left: 50%;
+    width: 299.75px;
+    height: 168.25px;
+    margin-top: 5%;
 }
-section:last-of-type div div {
-  max-width: 300px;
-  font-size: 20px;
+section:last-of-type p:last-of-type{
+max-width: 300px;
+font-size: 17px;
 }
-section:first-of-type p {
-  font-size: 25px;
+section:first-of-type p:first-of-type{
+    font-size: 30px;
 }
 section:last-of-type {
-  margin-left: 20%;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
 }
-
 .title {
-  font-size: 25px;
+    font-size: 25px;
 }
 #addWeblog {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 235%;
 }
 #addWeblog a {
-  text-decoration: none;
-  font-size: 25px;
-  font-weight: 600;
-  color: white;
-  background-color: black;
-  padding: 5px;
-  border-radius: 50px;
-  height: max-content;
-  height: 20px;
-  display: flex;
-  align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 50px;
+   height: max-content;
+   height: 20px;
+   display: flex;
+   align-items: center;
 }
 #addWeblog p {
-  background-color: black;
-  padding: 5px;
-  border-radius: 10px;
-  font-size: 15px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    
 }
 h3 {
-  color: white;
+    color: white;
 }
 ul {
-  width: 80%;
-  background-color: white;
+    width: 80%;
+    background-color: white;
 }
 footer {
   margin-top: 10%;
