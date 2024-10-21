@@ -1,76 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
- 
-    <img id="background" src="docs/background.jpg" alt="">
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img id="background" src="docs/background.jpg" alt="" />
 
     <header>
-
-      <img src="docs/moon.jpg" alt="">
+      <img src="docs/moon.jpg" alt="" />
 
       <div>
-      <p>Byte-Bandits</p>
-      <p>Oct 22</p>
-    </div>
+        <p>Byte-Bandits</p>
+        <p>Oct 22</p>
+      </div>
 
-    <div>
-        <p>In publishing and graphic design, Lorem ipsum is a placeholder text </p>
-        <p>In publishing and graphic design, Lorem ipsum is a placeholder text </p>
-    </div>
+      <div>
+        <p>
+          In publishing and graphic design, Lorem ipsum is a placeholder text
+        </p>
+        <p>
+          In publishing and graphic design, Lorem ipsum is a placeholder text
+        </p>
+      </div>
       <a href="#">Comment</a>
-
     </header>
 
     <main>
+      <section>
+        <p>Byte-Bandits</p>
+        <div>
+          <img class="mainMoon" src="docs/mainMoon.jpg" alt="" />
 
-        <section>
+          <div id="addWeblog">
+            <p>Add a Weblog</p>
+            <a href="">+</a>
+          </div>
+        </div>
+      </section>
 
-            <p>Byte-Bandits</p>
-            <div>
-                <img class="mainMoon" src="docs/mainMoon.jpg" alt="">
+      <section>
+        <div class="mainBlog">
+          <img class="img-title" src="docs/titleImg.jpg" alt="" />
 
-                <div id="addWeblog">
-                    <p>Add a Weblog</p>
-                    <a href="">+</a>
-                </div>
-
-            </div>
-
-            
-        
-        </section>
-
-        <section>
-
-            <div class="mainBlog">
-
-                <img class="img-title" src="docs/titleImg.jpg" alt="">
-
-                <div>
-                    <p class="title">MOON</p>
-                    <p class="description">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.</p>            
-                </div>
-
-            </div>
-
-        </section>
-
-        
-
+          <div>
+            <p class="title">MOON</p>
+            <p class="description">
+              In publishing and graphic design, Lorem ipsum is a placeholder
+              text commonly used to demonstrate the visual form of a document or
+              a typeface without relying on meaningful content. Lorem ipsum may
+              be used as a placeholder before the final copy is available.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <h3>Comments</h3>
-        <ul></ul>
+      <h3>Comments</h3>
+      <input type="text" id="user-input" />
+      <input type="submit" id="sumbit" />
+      <ul id="comments"></ul>
     </footer>
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
