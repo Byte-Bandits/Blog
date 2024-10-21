@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+   background-color: black;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#background {
+    width: 100%;
+  position: absolute;
+  right: 0;
+    height: 100vh;
+    margin: 0;
+    z-index: -1;
+}
+header {
+   backdrop-filter: blur(2px);
+    background: rgba(156, 156, 156, 0.421);
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 55%;
+    height: 12%;
+    border-radius: 40px
+}
+
+p {
+    color: white;
+}
+header img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+   
+}
+header div:first-of-type p:first-of-type {
+    font-size: 25px;
+}
+header div:first-of-type p:last-of-type {
+    font-size: 20px;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+header div:last-of-type {
+   display: flex;
+   flex-direction: row;
+   width: 250px;
+}
+
+
+main {
+    backdrop-filter: blur(2px);
+    background: rgba(156, 156, 156, 0.421);
+    width: 55%;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 60%;
+    position: absolute;
+    top: 30%;
+    border-radius: 40px
+}
+.img-title {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  box-shadow: 0px 0px 20px 5px white;
+}
+section:first-of-type div p {
+    width: 180px;
+    font-size: 10px;
+   margin-top: -2%;
+}
+section:first-of-type div p:first-of-type {
+    margin-left: 25%;
+}
+section:first-of-type div {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+section:last-of-type {
+    display: flex;
+    flex-direction: row;
+}
+section:last-of-type div:last-of-type {
+width: 300px;
+font-size: 20px;
+margin-left: 10%;
+}
+.title {
+    font-size: 25px;
+}
+#addWeblog {
+    display: flex;
+    flex-direction: row;
+}
+#addWeblog a {
+    text-decoration: none;
+    font-size: 25px;
+    vertical-align: bottom;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 50px;
+   height: max-content;
+}
+#addWeblog p {
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
