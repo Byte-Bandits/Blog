@@ -5,7 +5,8 @@ body {
   height: 100vh;
   position: relative;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #background {
@@ -19,8 +20,7 @@ body {
 header {
    backdrop-filter: blur(2px);
     background: rgba(156, 156, 156, 0.421);
-    position: absolute;
-    top: 10%;
+   margin-top: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -39,7 +39,7 @@ header img {
     border-radius: 50%;
     height: 80px;
     width: 80px;
-   
+   box-shadow: 0px 0px 10px 2px white;
 }
 header div:first-of-type p:first-of-type {
     font-size: 25px;
@@ -65,16 +65,16 @@ main {
     width: 55%;
     padding-left: 30px;
     padding-right: 30px;
-    height: 60%;
-    position: absolute;
-    top: 30%;
+    height: max-content;
+   margin-top: 6%;
     border-radius: 40px
 }
-.img-title {
+.mainMoon {
     width: 300px;
     height: 300px;
     border-radius: 50%;
   box-shadow: 0px 0px 20px 5px white;
+  position: fixed;
 }
 section:first-of-type div p {
     width: 180px;
@@ -104,21 +104,26 @@ margin-left: 10%;
 #addWeblog {
     display: flex;
     flex-direction: row;
+    align-items: center;
+   margin-top: 105%;
 }
 #addWeblog a {
     text-decoration: none;
     font-size: 25px;
-    vertical-align: bottom;
     font-weight: 600;
     color: white;
     background-color: black;
     padding: 5px;
     border-radius: 50px;
    height: max-content;
+   height: 20px;
+   display: flex;
+   align-items: center;
 }
 #addWeblog p {
     background-color: black;
     padding: 5px;
     border-radius: 10px;
     font-size: 15px;
+    
 }
