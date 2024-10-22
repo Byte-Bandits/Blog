@@ -64,13 +64,39 @@ function submitBlog() {
             <input
               placeholder="Comment"
               type="text"
-              id="comment-username"
+              id="user-comment"
             />
-            <input type="submit" id="submit" />
+            <input type="submit"  id="submit-comment" />
             <ul id="comments"></ul>
+            <p>------------------</p>
           </div>
         </div>
   `;
 }
 
-// comment section
+// // select comment section
+// let commentUsername = document.querySelector("#comment-username");
+// let userComment = document.querySelector("#user-comment");
+// let submitComment = document.querySelector("#submit-comment");
+// let comment = document.querySelector("#comments");
+
+// // get value
+
+// // create a constructor to get a comment and username
+// function GetComment(comment, username) {
+//   this.comment = comment;
+//   this.username = username;
+// }
+
+// // create a event for submit BTN
+// submitComment.addEventListener("click", postCommentBTN);
+
+// function postCommentBTN() {
+//   let commentUsernameValue = commentUsername.value;
+//   let userCommentValue = userComment.value;
+//   // get a value of comment section input
+//   let newComment = new GetComment(userCommentValue, commentUsernameValue);
+//   console.log(newComment.comment);
+//   console.log(newComment.username);
+// }
+// postCommentBTN();
