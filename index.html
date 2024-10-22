@@ -19,13 +19,13 @@
 
       <div id="signUp">
         <p>Sign Up</p>
-        <input placeholder="Username" type="text" />
-        <input placeholder="Title" type="text" />
-        <input placeholder="description" type="text" />
-        <input id="fileInput" type="file" />
-        <input id="submitSignUp" placeholder="Submit" type="submit" />
+        <input placeholder="Username" type="text" id="blog-username" />
+        <input placeholder="Title" type="text" id="blog-title" />
+        <input placeholder="description" type="text" id="blog-description" />
+        <input id="file-input" type="tex" placeholder="enter your image link" />
+        <input id="submit-signup" placeholder="Submit" type="submit" />
       </div>
-      <a id="commentBtn" href="#comments">Comment</a>
+      <a id="commentBtn" href="#comments">Go to bottom</a>
     </header>
 
     <main>
@@ -35,38 +35,13 @@
           <img class="mainMoon" src="docs/mainMoon.jpg" alt="" />
 
           <div id="addWeblog">
-            <p>Add a Weblog</p>
-            <a href="">+</a>
+            <!-- <p>Add a Weblog</p>
+            <a href="">+</a> -->
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="mainBlog">
-          <img class="img-title" src="docs/titleImg.jpg" alt="" />
-
-          <div id="blog">
-            <p class="title">MOON</p>
-            <p class="description">
-              The Moon is Earth's only natural satellite. It orbits at an
-              average distance of 384,400 km (238,900 mi), about 30 times the
-              diameter of Earth. Tidal forces between Earth and the Moon have
-              synchronized the Moon's orbital period (lunar month) with its
-              rotation period (lunar day) at 29.5 Earth days, causing the same
-              side of the Moon to always face Earth. The Moon's gravitational
-              pull—and, to a lesser extent, the Sun's—are the main drivers of
-              Earth's tides.
-            </p>
-          </div>
-          <div>
-            <h3>Comments</h3>
-            <input placeholder="Username" type="text" />
-            <input placeholder="Comment" type="text" id="user-input" />
-            <input type="submit" id="sumbit" />
-            <ul id="comments"></ul>
-          </div>
-        </div>
-      </section>
+      <section id="blog"></section>
     </main>
 
     <script src="script.js"></script>
