@@ -229,3 +229,6 @@ footer input:last-of-type {
   cursor: pointer;
   width: 120px;
 }
+.user-info-font {
+  font-size: 12px;
+}

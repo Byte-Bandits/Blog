@@ -25,6 +25,14 @@ function getTime() {
   return time;
 }
 
+// create a random ID number
+function createID() {
+  let dateNow = Date.now();
+  let randomNum = (Math.random() * 1000).toFixed();
+  let uniqueID = dateNow + randomNum;
+  return uniqueID;
+}
+
 // event click for submit blog BTN
 submitSignup.addEventListener("click", submitBlog);
 
@@ -46,7 +54,9 @@ function submitBlog() {
             <p class="description">
               ${blogDescriptionValue}
             </p>
-            <p> @${blogUsernameValue} ${getTime} </p>
+            <p class="user-info-font"> username: @${blogUsernameValue}  </p>
+            <p class="user-info-font"> post at: ${getTime()}  </p>
+            <p class="user-info-font"> ID: ${createID()}  </p>
           </div>
           <div>
             <h3>Comments</h3>
@@ -62,3 +72,5 @@ function submitBlog() {
         </div>
   `;
 }
+
+// comment section
